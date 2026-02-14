@@ -1,0 +1,11 @@
+{
+    "name": "gmmi-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "cd gmmi-frontend && npm install && npm run build",
+        "install:all": "npm install && cd gmmi-frontend && npm install && cd ../backend && npm install",
+        "backend": "cd backend && npm run dev",
+        "frontend": "cd gmmi-frontend && npm run dev"
+    }
+}

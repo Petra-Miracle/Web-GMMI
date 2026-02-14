@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/(auth|api)(.*)",
+            "destination": "/api/index.js"
+        },
+        {
+            "source": "/uploads/(.*)",
+            "destination": "backend/uploads/$1"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "gmmi-frontend/dist/$1"
+        }
+    ]
+}
